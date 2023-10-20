@@ -1,11 +1,12 @@
 **Describe the bug**
 
-While using `com.azure:azure-messaging-servicebus:7.15.0-beta.3` to process messages from 2 or more concurrent
+While using `com.azure:azure-messaging-servicebus` on version `7.15.0-beta.3` and `7.14.4` to process messages from 2 or more concurrent
 sessions, the threads processing work on other non-idle sessions are interrupted when a session idles out.
 
-When this interrupts a thread calling `ServiceBusReceivedMessageContext#complete()`, `abandon()` or other similar methods
-it can result in the processor hanging and no longer processing messages. This is harder to reproduce since the runtime of these
-methods is less predictable.
+Under some circumstances that interrupt appears to break the non-idle receiving session causing it to no longer process messages.
+This is evidenced by the log of the example showing that it is producing but not consuming messages. `7.14.4` does appear
+to recover eventually but still interrupts unrelated work.
+
 
 ***Exception or Stack Trace***
 
@@ -79,7 +80,7 @@ If allowed to run for long enough no more messages will be processed for either 
 
 ***Code Snippet***
 
-A full example application that triggers this bug can be found at [this repository]().
+A full example application that triggers this bug can be found at [this repository](https://github.com/thriveglobal/azure-service-bus-bug).
 
 The processor configuration is:
 ```
@@ -132,7 +133,7 @@ If applicable, add screenshots to help explain your problem.
 - OS: MacOs Monterey 12.6.3 (M1 Mac pro)
 - IDE: Intellij
 - Library/Libraries: [e.g. com.azure:azure-core:1.16.0 (groupId:artifactId:version)]
-  - `com.azure:azure-messaging-servicebus:7.15.0-beta.3`
+  - `com.azure:azure-messaging-servicebus:7.15.0-beta.3` or `7.14.4`
   - `com.azure:azure-core-amqp:jar:2.9.0-beta.5` (transitive from the above)
   - `com.azure:azure-identity:1.10.1`
 
