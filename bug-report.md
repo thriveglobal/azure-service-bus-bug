@@ -67,16 +67,17 @@ Caused by: java.lang.InterruptedException: null
 ```
 
 **To Reproduce**
-
 The entire example application used to reproduce this bug can be found [here](https://github.com/thriveglobal/azure-service-bus-bug/blob/master/bug-report.md)
 
+* Construct a processor with a handle method that takes a long time to process some messages. 
+  In this case messages from the `constant` session, for maximum reproducibility it should be roughly the idle timeout or longer.
+Then in a loop:
+* Send a message with a session `constant`
+* Send a message with a session `intermittent`
+* Wait 30s or so
 
-* Construct a processor with a handle method that takes a long time to process messages (roughly the idle timeout or longer)
-* Send messages with a session `constant` every second
-* Send messages with a session `intermittent` every 10 seconds (double the idle timeout)
-
-When the `intermittent` session times out; the message being processed for the `constant` session will be interrupted.
-If allowed to run for long enough no more messages will be processed for either session.
+You'll be able to observe the intermittent session time out; and then the work on the constant session be interrupted.
+If done for long enough eventually you'll see that messages are sent but no longer processed on either session.
 
 ***Code Snippet***
 
