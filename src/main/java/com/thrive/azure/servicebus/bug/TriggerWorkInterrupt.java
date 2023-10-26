@@ -87,7 +87,7 @@ public class TriggerWorkInterrupt {
         while (RUNNING.get()) {
             LOG.info("Starting repro attempt:\n\n");
             sendMessageForSession(azureSender, UUID.randomUUID().toString(), "intermittent");
-            for (int i = 0; i < 11; i++) {
+            for (int i = 0; i < 10; i++) {
                 sendMessageForSession(azureSender, String.valueOf(i), "constant");
             }
 

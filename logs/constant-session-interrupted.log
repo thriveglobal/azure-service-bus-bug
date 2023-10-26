@@ -1,58 +1,168 @@
-13:42:44.592 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 406024f9-a2cf-4f4f-8af5-e12970d44fa8 session: intermittent
-13:42:44.942 [reactor-executor-1] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Channel is now active.","entityPath":"N/A"}
-13:42:46.280 [reactor-executor-2] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.315 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 0 session: constant
-13:42:46.316 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.347 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 1 session: constant
-13:42:46.348 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.382 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 2 session: constant
-13:42:46.383 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.417 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 3 session: constant
-13:42:46.418 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.448 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 4 session: constant
-13:42:46.449 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.461 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: intermittent message: 406024f9-a2cf-4f4f-8af5-e12970d44fa8
-13:42:46.486 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 5 session: constant
-13:42:46.487 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.520 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 6 session: constant
-13:42:46.520 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.551 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 7 session: constant
-13:42:46.552 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.578 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: intermittent message: 406024f9-a2cf-4f4f-8af5-e12970d44fa8
-13:42:46.578 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 0
-13:42:46.579 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:46.598 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 8 session: constant
-13:42:46.599 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.631 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 9 session: constant
-13:42:46.631 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:46.663 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 10 session: constant
-13:42:46.663 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
-13:42:47.123 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 0
-13:42:47.124 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 1
-13:42:47.124 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:47.717 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 1
-13:42:47.717 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 2
-13:42:47.717 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:48.308 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 2
-13:42:48.308 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 3
-13:42:48.309 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:48.847 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 3
-13:42:48.847 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 4
-13:42:48.847 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:49.452 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 4
-13:42:49.452 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 5
-13:42:49.452 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:50.060 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 5
-13:42:50.060 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 6
-13:42:50.060 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:50.699 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 6
-13:42:50.700 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 7
-13:42:50.700 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:51.341 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 7
-13:42:51.341 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 8
-13:42:51.341 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:51.467 [parallel-9] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_9c3284_1698342164584","timeout":"PT5S"}
-13:42:51.474 [receiver-1-2] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:50820,suspend=y,server=n -javaagent:/Users/jon.goodwin/Library/Caches/JetBrains/IntelliJIdea2022.3/captureAgent/debugger-agent.jar=file:/private/var/folders/pk/1vqcp8z555b68z8tnb31w9jh0000gp/T/capture.props -Dfile.encoding=UTF-8 -classpath /Users/jon.goodwin/git/azure-service-bus-bug/target/classes:/Users/jon.goodwin/.m2/repository/com/azure/azure-messaging-servicebus/7.15.0-beta.3/azure-messaging-servicebus-7.15.0-beta.3.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core/1.42.0/azure-core-1.42.0.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.5/jackson-annotations-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.5/jackson-core-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.5/jackson-databind-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.5/jackson-datatype-jsr310-2.13.5.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/reactor-core/3.4.30/reactor-core-3.4.30.jar:/Users/jon.goodwin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core-amqp/2.9.0-beta.5/azure-core-amqp-2.9.0-beta.5.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/qpid-proton-j-extensions/1.2.4/qpid-proton-j-extensions-1.2.4.jar:/Users/jon.goodwin/.m2/repository/org/apache/qpid/proton-j/0.33.8/proton-j-0.33.8.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core-http-netty/1.13.6/azure-core-http-netty-1.13.6.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-handler/4.1.94.Final/netty-handler-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver/4.1.94.Final/netty-resolver-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport/4.1.94.Final/netty-transport-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-handler-proxy/4.1.94.Final/netty-handler-proxy-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-socks/4.1.94.Final/netty-codec-socks-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-buffer/4.1.94.Final/netty-buffer-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec/4.1.94.Final/netty-codec-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-http/4.1.94.Final/netty-codec-http-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-http2/4.1.94.Final/netty-codec-http2-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.94.Final/netty-transport-native-unix-common-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.94.Final/netty-transport-native-epoll-4.1.94.Final-linux-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.94.Final/netty-transport-classes-epoll-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.94.Final/netty-transport-native-kqueue-4.1.94.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.94.Final/netty-transport-classes-kqueue-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-classes/2.0.61.Final/netty-tcnative-classes-2.0.61.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.33/reactor-netty-http-1.0.33.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns/4.1.93.Final/netty-resolver-dns-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-dns/4.1.93.Final/netty-codec-dns-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.93.Final/netty-resolver-dns-native-macos-4.1.93.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.93.Final/netty-resolver-dns-classes-macos-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.33/reactor-netty-core-1.0.33.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-common/4.1.94.Final/netty-common-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.5/jackson-dataformat-xml-2.13.5.jar:/Users/jon.goodwin/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.4.0/woodstox-core-6.4.0.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-identity/1.10.1/azure-identity-1.10.1.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/msal4j/1.13.9/msal4j-1.13.9.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/oauth2-oidc-sdk/10.7.1/oauth2-oidc-sdk-10.7.1.jar:/Users/jon.goodwin/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/content-type/2.2/content-type-2.2.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/lang-tag/1.7/lang-tag-1.7.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.30.2/nimbus-jose-jwt-9.30.2.jar:/Users/jon.goodwin/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/jon.goodwin/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/jon.goodwin/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/msal4j-persistence-extension/1.2.0/msal4j-persistence-extension-1.2.0.jar:/Users/jon.goodwin/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/jon.goodwin/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/Users/jon.goodwin/.m2/repository/ch/qos/logback/logback-classic/1.4.8/logback-classic-1.4.8.jar:/Users/jon.goodwin/.m2/repository/ch/qos/logback/logback-core/1.4.8/logback-core-1.4.8.jar:/Users/jon.goodwin/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/jon.goodwin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/jon.goodwin/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/jon.goodwin/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/jon.goodwin/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar com.thrive.azure.servicebus.bug.TriggerWorkInterrupt
+Connected to the target VM, address: '127.0.0.1:50820', transport: 'socket'
+14:41:29,261 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.8
+14:41:29,276 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:41:29,278 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/jon.goodwin/git/azure-service-bus-bug/target/classes/logback.xml]
+14:41:29,356 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+14:41:29,356 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:41:29,373 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:41:29,373 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:41:29,373 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:41:29,374 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+14:41:29,374 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+14:41:29,374 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.netty] to ERROR
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [reactor.netty] to ERROR
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.redisson] to WARN
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.microsoft.aad] to WARN
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.identity] to WARN
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.core] to WARN
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.messaging.servicebus] to INFO
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.messaging.servicebus.ServiceBusSessionReceiver] to DEBUG
+14:41:29,375 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.core.amqp.implementation] to WARN
+14:41:29,375 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2e4b8173 - End of configuration.
+14:41:29,375 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@29626d54 - Registering current configuration as safe fallback point
+14:41:29.539 [main] DEBUG reactor.util.Loggers - Using Slf4j logging framework
+14:41:29.613 [main] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Setting next AMQP channel.","entityPath":"N/A"}
+14:41:29.614 [main] INFO  c.a.m.s.ServiceBusClientBuilder - # of open clients with shared connection: 1
+14:41:29.651 [main] INFO  c.a.m.s.ServiceBusClientBuilder - # of open clients using shared connection cache: 1
+14:41:29.654 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Starting repro attempt:
+
+
+14:41:29.654 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 305668c1-07d4-4cd4-af6d-0a8eb900c79a session: intermittent
+14:41:29.958 [reactor-executor-1] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Channel is now active.","entityPath":"N/A"}
+14:41:30.881 [reactor-executor-2] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:30.937 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 0 session: constant
+14:41:30.938 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:30.943 [reactor-executor-1] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Adding prefetch to receive link.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_f5f084_1698345689647","prefetch":0}
+14:41:30.983 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"intermittent","messageId":"305668c1-07d4-4cd4-af6d-0a8eb900c79a"}
+14:41:30.983 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: intermittent message: 305668c1-07d4-4cd4-af6d-0a8eb900c79a
+14:41:30.999 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 1 session: constant
+14:41:31.000 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.017 [reactor-executor-1] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Adding prefetch to receive link.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_fb31d3_1698345689634","prefetch":0}
+14:41:31.021 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: intermittent message: 305668c1-07d4-4cd4-af6d-0a8eb900c79a
+14:41:31.042 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"0"}
+14:41:31.042 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 0
+14:41:31.042 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:31.042 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 2 session: constant
+14:41:31.043 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.086 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 3 session: constant
+14:41:31.087 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.136 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 4 session: constant
+14:41:31.136 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.194 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 5 session: constant
+14:41:31.195 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.259 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 6 session: constant
+14:41:31.264 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.317 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 7 session: constant
+14:41:31.318 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.363 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 8 session: constant
+14:41:31.364 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.407 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 9 session: constant
+14:41:31.407 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:31.613 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 0
+14:41:31.645 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"1"}
+14:41:31.645 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 1
+14:41:31.645 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:32.284 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 1
+14:41:32.308 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"2"}
+14:41:32.308 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 2
+14:41:32.308 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:32.925 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 2
+14:41:32.947 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"3"}
+14:41:32.948 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 3
+14:41:32.948 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:33.496 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 3
+14:41:33.520 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"4"}
+14:41:33.521 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 4
+14:41:33.521 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:34.145 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 4
+14:41:34.171 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"5"}
+14:41:34.171 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 5
+14:41:34.171 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:34.714 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 5
+14:41:34.743 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"6"}
+14:41:34.743 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 6
+14:41:34.744 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:35.325 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 6
+14:41:35.354 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"7"}
+14:41:35.354 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 7
+14:41:35.354 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:35.981 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 7
+14:41:35.986 [parallel-10] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_f5f084_1698345689647","timeout":"PT5S"}
+14:41:36.004 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"8"}
+14:41:36.004 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 8
+14:41:36.004 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:36.544 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 8
+14:41:36.569 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"9"}
+14:41:36.569 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 9
+14:41:36.569 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:37.108 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 9
+14:41:41.570 [parallel-4] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_fb31d3_1698345689634","timeout":"PT5S"}
+14:41:56.453 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Starting repro attempt:
+
+
+14:41:56.454 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 8156b1bc-70a0-45c5-af53-db8e72a2024e session: intermittent
+14:41:56.455 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.631 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 0 session: constant
+14:41:56.632 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.654 [reactor-executor-1] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Adding prefetch to receive link.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_53ed51_1698345701571","prefetch":0}
+14:41:56.674 [reactor-executor-1] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Adding prefetch to receive link.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_1096d5_1698345695989","prefetch":0}
+14:41:56.677 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 1 session: constant
+14:41:56.677 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.711 [receiver-0-4] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"intermittent","messageId":"8156b1bc-70a0-45c5-af53-db8e72a2024e"}
+14:41:56.711 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: intermittent message: 8156b1bc-70a0-45c5-af53-db8e72a2024e
+14:41:56.716 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"0"}
+14:41:56.765 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: intermittent message: 8156b1bc-70a0-45c5-af53-db8e72a2024e
+14:41:56.765 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 0
+14:41:56.765 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:56.823 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 2 session: constant
+14:41:56.824 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.829 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"1"}
+14:41:56.866 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 3 session: constant
+14:41:56.867 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.896 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"2"}
+14:41:56.936 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 4 session: constant
+14:41:56.937 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:56.941 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"3"}
+14:41:57.101 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 5 session: constant
+14:41:57.101 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"4"}
+14:41:57.102 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:57.150 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 6 session: constant
+14:41:57.150 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:57.158 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"5"}
+14:41:57.195 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 7 session: constant
+14:41:57.196 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:57.249 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 8 session: constant
+14:41:57.252 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:57.252 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"6"}
+14:41:57.301 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 9 session: constant
+14:41:57.302 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+14:41:57.350 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"7"}
+14:41:57.356 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 0
+14:41:57.357 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 1
+14:41:57.357 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:57.393 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"8"}
+14:41:57.650 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"9"}
+14:41:57.951 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 1
+14:41:57.952 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 2
+14:41:57.952 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:58.821 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 2
+14:41:58.822 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 3
+14:41:58.822 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:41:59.451 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 3
+14:41:59.451 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 4
+14:41:59.451 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:00.007 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 4
+14:42:00.007 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 5
+14:42:00.007 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:00.778 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 5
+14:42:00.779 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 6
+14:42:00.779 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:01.378 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 6
+14:42:01.379 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 7
+14:42:01.379 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:01.714 [parallel-8] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_53ed51_1698345701571","timeout":"PT5S"}
+14:42:01.718 [receiver-0-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
 com.azure.messaging.servicebus.ServiceBusException: java.lang.InterruptedException: sleep interrupted
 	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
 	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
@@ -100,14 +210,17 @@ Caused by: java.lang.InterruptedException: sleep interrupted
 	at java.base/java.lang.Thread.sleep(Native Method)
 	at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:26)
 	... 38 common frames omitted
-13:42:51.477 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 9
-13:42:51.477 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:51.787 [parallel-4] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_73bf95_1698342164568","timeout":"PT5S"}
-13:42:51.982 [receiver-1-2] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
-13:42:51.984 [receiver-1-2] INFO  c.a.m.s.i.ServiceBusReactorAmqpConnection - {"az.sdk.message":"Creating management node.","linkName":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","address":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management"}
-13:42:52.342 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a78b22e-a81c-423f-a1f6-4d86e31729b7_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52","condition":"com.microsoft:session-lock-lost"}
-13:42:52.343 [receiver-1-2] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
-com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a78b22e-a81c-423f-a1f6-4d86e31729b7_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+14:42:01.720 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 8
+14:42:01.720 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:02.442 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 8
+14:42:02.443 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 9
+14:42:02.443 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:02.656 [parallel-10] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_1096d5_1698345695989","timeout":"PT5S"}
+14:42:02.945 [receiver-0-4] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
+14:42:02.950 [receiver-0-4] INFO  c.a.m.s.i.ServiceBusReactorAmqpConnection - {"az.sdk.message":"Creating management node.","linkName":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","address":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management"}
+14:42:03.858 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:a89683f6-bd0d-41d0-8702-cf2db1ba3c5f_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T18:42:03","condition":"com.microsoft:session-lock-lost"}
+14:42:03.858 [receiver-0-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:a89683f6-bd0d-41d0-8702-cf2db1ba3c5f_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T18:42:03, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
 	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
 	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
@@ -146,7 +259,7 @@ com.azure.messaging.servicebus.ServiceBusException: The session lock has expired
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a78b22e-a81c-423f-a1f6-4d86e31729b7_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:a89683f6-bd0d-41d0-8702-cf2db1ba3c5f_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T18:42:03, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
 	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
 	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
@@ -212,130 +325,15 @@ Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock 
 		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
 		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
 		... 6 common frames omitted
-Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a78b22e-a81c-423f-a1f6-4d86e31729b7_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:a89683f6-bd0d-41d0-8702-cf2db1ba3c5f_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T18:42:03, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
 	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
 	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
 	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
 	... 26 common frames omitted
-13:42:52.343 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 10
-13:42:52.343 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:52.845 [receiver-1-2] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
-13:42:52.870 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:c11fe73d-2e34-4534-a5e4-f34b03dba87c_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52","condition":"com.microsoft:session-lock-lost"}
-13:42:52.870 [receiver-1-2] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
-com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:c11fe73d-2e34-4534-a5e4-f34b03dba87c_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
-	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
-	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
-	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
-	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
-	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
-	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
-	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
-	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
-	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
-	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
-	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
-	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
-	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
-	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
-	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
-	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
-	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
-	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
-	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:c11fe73d-2e34-4534-a5e4-f34b03dba87c_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
-	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
-	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
-	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
-	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2065)
-	at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210)
-	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:132)
-	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:292)
-	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
-	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:172)
-	at com.azure.core.amqp.implementation.RequestResponseChannel.settleMessage(RequestResponseChannel.java:421)
-	at com.azure.core.amqp.implementation.RequestResponseChannel.lambda$new$0(RequestResponseChannel.java:197)
-	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160)
-	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
-	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
-	at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
-	at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
-	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
-	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
-	at com.azure.core.amqp.implementation.handler.ReceiveLinkHandler.onDelivery(ReceiveLinkHandler.java:173)
-	at org.apache.qpid.proton.engine.BaseHandler.handle(BaseHandler.java:185)
-	at org.apache.qpid.proton.engine.impl.EventImpl.dispatch(EventImpl.java:108)
-	at org.apache.qpid.proton.reactor.impl.ReactorImpl.dispatch(ReactorImpl.java:324)
-	at org.apache.qpid.proton.reactor.impl.ReactorImpl.process(ReactorImpl.java:291)
-	at com.azure.core.amqp.implementation.ReactorExecutor.run(ReactorExecutor.java:91)
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
-	... 6 common frames omitted
-	Suppressed: java.lang.Exception: #block terminated with an error
-		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
-		at reactor.core.publisher.Mono.block(Mono.java:1742)
-		at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
-		at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
-		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
-		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
-		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
-		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
-		at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
-		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
-		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
-		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
-		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
-		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
-		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
-		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
-		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
-		at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
-		at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
-		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
-		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
-		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
-		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
-		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
-		... 6 common frames omitted
-Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:c11fe73d-2e34-4534-a5e4-f34b03dba87c_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:42:52, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
-	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
-	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
-	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
-	... 26 common frames omitted
-13:42:52.875 [receiver-1-2] ERROR c.a.c.a.i.ReactorReceiver - {"az.sdk.message":"Cannot add credits to closed link: session-_9c3284_1698342164584","exception":"Cannot add credits to closed link: session-_9c3284_1698342164584","connectionId":"MF_150c41_1698342164520","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_9c3284_1698342164584"}
-13:42:52.875 [receiver-1-2] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
-reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.IllegalStateException: Cannot add credits to closed link: session-_9c3284_1698342164584
-Caused by: java.lang.IllegalStateException: Cannot add credits to closed link: session-_9c3284_1698342164584
+14:42:03.862 [receiver-0-4] ERROR c.a.c.a.i.ReactorReceiver - {"az.sdk.message":"Cannot add credits to closed link: session-_53ed51_1698345701571","exception":"Cannot add credits to closed link: session-_53ed51_1698345701571","connectionId":"MF_e83a1f_1698345689587","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_53ed51_1698345701571"}
+14:42:03.863 [receiver-0-4] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.IllegalStateException: Cannot add credits to closed link: session-_53ed51_1698345701571
+Caused by: java.lang.IllegalStateException: Cannot add credits to closed link: session-_53ed51_1698345701571
 	at com.azure.core.amqp.implementation.ReactorReceiver.addCredits(ReactorReceiver.java:250)
 	at com.azure.messaging.servicebus.ServiceBusSessionReceiver.lambda$new$2(ServiceBusSessionReceiver.java:98)
 	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:138)
@@ -356,12 +354,22 @@ Caused by: java.lang.IllegalStateException: Cannot add credits to closed link: s
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-13:42:53.314 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 8
-13:42:53.314 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:53.950 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 8
-13:42:53.980 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 9
-13:42:53.981 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:54.529 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 9
-13:42:54.566 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 10
-13:42:54.566 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
-13:42:55.124 [receiver-0-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 10
+14:42:04.725 [reactor-executor-1] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Adding prefetch to receive link.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_58796e_1698345723859","prefetch":0}
+14:42:04.838 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"7"}
+14:42:04.838 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 7
+14:42:04.838 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:05.626 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 7
+14:42:05.658 [receiver-1-2] DEBUG c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Received message.","sessionId":"constant","messageId":"9"}
+14:42:05.659 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 9
+14:42:05.659 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+14:42:06.382 [receiver-1-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 9
+Disconnected from the target VM, address: '127.0.0.1:50820', transport: 'socket'
+14:42:09.398 [Thread-0] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Removing receiver links.
+14:42:09.399 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - {"az.sdk.message":"Closing a dependent client.","numberOfOpenClients":0}
+14:42:09.399 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - No more open clients, closing shared connection.
+14:42:09.399 [Thread-0] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Upstream connection publisher was completed. Terminating processor.","entityPath":"N/A"}
+14:42:09.399 [Thread-0] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Channel is disposed.","entityPath":"N/A"}
+14:42:09.402 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - {"az.sdk.message":"Closing a client using shared connection cache.","numberOfOpenClients":0}
+14:42:09.402 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - No more open clients, closing shared connection cache.
+
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)

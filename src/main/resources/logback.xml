@@ -18,6 +18,6 @@
     <logger name="com.azure.identity" level="WARN"/>
     <logger name="com.azure.core" level="WARN"/>
     <logger name="com.azure.messaging.servicebus" level="INFO"/>
-    <logger name="com.azure.messaging.servicebus.ServiceBusSessionReceiver" level="INFO"/>
+    <logger name="com.azure.messaging.servicebus.ServiceBusSessionReceiver" level="DEBUG"/>
     <logger name="com.azure.core.amqp.implementation" level="WARN"/>
 </configuration>
