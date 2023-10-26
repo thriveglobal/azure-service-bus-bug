@@ -37,8 +37,7 @@ public class TriggerWorkInterrupt {
                 ctx.getFullyQualifiedNamespace(), ctx.getEntityPath(), ctx.getException());
     }
 
-    public static void sendMessageForSession(ServiceBusSenderClient azureSender, String session) {
-        String id = UUID.randomUUID().toString();
+    public static void sendMessageForSession(ServiceBusSenderClient azureSender, String id, String session) {
         try {
             LOG.info("Sending message: {} session: {} ", id, session);
             azureSender.sendMessage(
@@ -87,9 +86,9 @@ public class TriggerWorkInterrupt {
 
         while (RUNNING.get()) {
             LOG.info("Starting repro attempt:\n\n");
-            sendMessageForSession(azureSender, "intermittent");
+            sendMessageForSession(azureSender, UUID.randomUUID().toString(), "intermittent");
             for (int i = 0; i < 11; i++) {
-                sendMessageForSession(azureSender, "constant");
+                sendMessageForSession(azureSender, String.valueOf(i), "constant");
             }
 
             // Wait a bit between messages just to avoid log spam
