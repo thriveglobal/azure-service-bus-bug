@@ -23,7 +23,7 @@ public class TriggerWorkInterrupt {
             LOG.info("Started handling message for session: {} message: {}", msg.getMessage().getSessionId(), msg.getMessage().getMessageId());
             if (msg.getMessage().getSessionId().equals("constant")) {
                 LOG.info("message on constant session sleeping");
-                Thread.sleep(SESSION_IDLE_TIMEOUT.toMillis());
+                Thread.sleep(SESSION_IDLE_TIMEOUT.toMillis() / 10);
             }
             msg.complete();
             LOG.info("Finished handling message for session: {} message: {}", msg.getMessage().getSessionId(), msg.getMessage().getMessageId());
@@ -61,6 +61,7 @@ public class TriggerWorkInterrupt {
                 .disableAutoComplete()
                 .processMessage(TriggerWorkInterrupt::processMessage)
                 .processError(TriggerWorkInterrupt::processError)
+                .maxAutoLockRenewDuration(Duration.ofMinutes(5))
                 .receiveMode(ServiceBusReceiveMode.PEEK_LOCK)
                 .subQueue(SubQueue.NONE)
                 .maxConcurrentSessions(2)
@@ -85,8 +86,11 @@ public class TriggerWorkInterrupt {
         }));
 
         while (RUNNING.get()) {
+            LOG.info("Starting repro attempt:\n\n");
             sendMessageForSession(azureSender, "intermittent");
-            sendMessageForSession(azureSender, "constant");
+            for (int i = 0; i < 11; i++) {
+                sendMessageForSession(azureSender, "constant");
+            }
 
             // Wait a bit between messages just to avoid log spam
             Uninterruptibles.sleepUninterruptibly(SESSION_IDLE_TIMEOUT.multipliedBy(5));

@@ -1,0 +1,704 @@
+/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:49840,suspend=y,server=n -javaagent:/Users/jon.goodwin/Library/Caches/JetBrains/IntelliJIdea2022.3/captureAgent/debugger-agent.jar=file:/private/var/folders/pk/1vqcp8z555b68z8tnb31w9jh0000gp/T/capture.props -Dfile.encoding=UTF-8 -classpath /Users/jon.goodwin/git/azure-service-bus-bug/target/classes:/Users/jon.goodwin/.m2/repository/com/azure/azure-messaging-servicebus/7.15.0-beta.3/azure-messaging-servicebus-7.15.0-beta.3.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core/1.42.0/azure-core-1.42.0.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.5/jackson-annotations-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.5/jackson-core-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.5/jackson-databind-2.13.5.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.5/jackson-datatype-jsr310-2.13.5.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/reactor-core/3.4.30/reactor-core-3.4.30.jar:/Users/jon.goodwin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core-amqp/2.9.0-beta.5/azure-core-amqp-2.9.0-beta.5.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/qpid-proton-j-extensions/1.2.4/qpid-proton-j-extensions-1.2.4.jar:/Users/jon.goodwin/.m2/repository/org/apache/qpid/proton-j/0.33.8/proton-j-0.33.8.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-core-http-netty/1.13.6/azure-core-http-netty-1.13.6.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-handler/4.1.94.Final/netty-handler-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver/4.1.94.Final/netty-resolver-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport/4.1.94.Final/netty-transport-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-handler-proxy/4.1.94.Final/netty-handler-proxy-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-socks/4.1.94.Final/netty-codec-socks-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-buffer/4.1.94.Final/netty-buffer-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec/4.1.94.Final/netty-codec-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-http/4.1.94.Final/netty-codec-http-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-http2/4.1.94.Final/netty-codec-http2-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.94.Final/netty-transport-native-unix-common-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.94.Final/netty-transport-native-epoll-4.1.94.Final-linux-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.94.Final/netty-transport-classes-epoll-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.94.Final/netty-transport-native-kqueue-4.1.94.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.94.Final/netty-transport-classes-kqueue-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-classes/2.0.61.Final/netty-tcnative-classes-2.0.61.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.33/reactor-netty-http-1.0.33.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns/4.1.93.Final/netty-resolver-dns-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-codec-dns/4.1.93.Final/netty-codec-dns-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.93.Final/netty-resolver-dns-native-macos-4.1.93.Final-osx-x86_64.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.93.Final/netty-resolver-dns-classes-macos-4.1.93.Final.jar:/Users/jon.goodwin/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.33/reactor-netty-core-1.0.33.jar:/Users/jon.goodwin/.m2/repository/io/netty/netty-common/4.1.94.Final/netty-common-4.1.94.Final.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.5/jackson-dataformat-xml-2.13.5.jar:/Users/jon.goodwin/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/jon.goodwin/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.4.0/woodstox-core-6.4.0.jar:/Users/jon.goodwin/.m2/repository/com/azure/azure-identity/1.10.1/azure-identity-1.10.1.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/msal4j/1.13.9/msal4j-1.13.9.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/oauth2-oidc-sdk/10.7.1/oauth2-oidc-sdk-10.7.1.jar:/Users/jon.goodwin/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/content-type/2.2/content-type-2.2.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/lang-tag/1.7/lang-tag-1.7.jar:/Users/jon.goodwin/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.30.2/nimbus-jose-jwt-9.30.2.jar:/Users/jon.goodwin/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/jon.goodwin/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/jon.goodwin/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/jon.goodwin/.m2/repository/com/microsoft/azure/msal4j-persistence-extension/1.2.0/msal4j-persistence-extension-1.2.0.jar:/Users/jon.goodwin/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/jon.goodwin/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/Users/jon.goodwin/.m2/repository/ch/qos/logback/logback-classic/1.4.8/logback-classic-1.4.8.jar:/Users/jon.goodwin/.m2/repository/ch/qos/logback/logback-core/1.4.8/logback-core-1.4.8.jar:/Users/jon.goodwin/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/jon.goodwin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/jon.goodwin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/jon.goodwin/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/jon.goodwin/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/jon.goodwin/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar com.thrive.azure.servicebus.bug.TriggerWorkInterrupt
+Connected to the target VM, address: '127.0.0.1:49840', transport: 'socket'
+13:07:13,034 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.8
+13:07:13,051 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:07:13,054 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/jon.goodwin/git/azure-service-bus-bug/target/classes/logback.xml]
+13:07:13,130 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+13:07:13,130 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:07:13,147 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+13:07:13,148 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+13:07:13,148 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+13:07:13,148 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+13:07:13,148 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.netty] to ERROR
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [reactor.netty] to ERROR
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.redisson] to WARN
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.microsoft.aad] to WARN
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.identity] to WARN
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.core] to WARN
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.messaging.servicebus] to INFO
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.messaging.servicebus.ServiceBusSessionReceiver] to INFO
+13:07:13,149 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.azure.core.amqp.implementation] to WARN
+13:07:13,149 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2e4b8173 - End of configuration.
+13:07:13,150 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@29626d54 - Registering current configuration as safe fallback point
+13:07:13.335 [main] DEBUG reactor.util.Loggers - Using Slf4j logging framework
+13:07:13.416 [main] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Setting next AMQP channel.","entityPath":"N/A"}
+13:07:13.418 [main] INFO  c.a.m.s.ServiceBusClientBuilder - # of open clients with shared connection: 1
+13:07:13.460 [main] INFO  c.a.m.s.ServiceBusClientBuilder - # of open clients using shared connection cache: 1
+13:07:13.464 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Starting repro attempt:
+
+
+13:07:13.464 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 43697a4b-02b5-44d3-b102-8c0d84a55751 session: intermittent
+13:07:14.155 [reactor-executor-1] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Channel is now active.","entityPath":"N/A"}
+13:07:15.051 [reactor-executor-2] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.091 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: ed273686-af06-481a-b9d8-bf029000d100 session: constant
+13:07:15.092 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.134 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 316059e2-497c-4578-8112-51695842566a session: constant
+13:07:15.134 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.186 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 579bb20d-4108-4fbe-956d-7977108790ce session: constant
+13:07:15.186 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.203 [receiver-0-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: intermittent message: 43697a4b-02b5-44d3-b102-8c0d84a55751
+13:07:15.219 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: a63d1964-9b20-488e-8be6-af1a2218f9d1 session: constant
+13:07:15.220 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.253 [receiver-0-2] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: intermittent message: 43697a4b-02b5-44d3-b102-8c0d84a55751
+13:07:15.253 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 8a7e2f25-0b98-435c-9e73-c81ee473351c session: constant
+13:07:15.253 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.283 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: fe5568f7-3374-41b8-ab07-9930557fac3f session: constant
+13:07:15.284 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.316 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 5c8f8d8a-060b-4e3f-8091-f1ff02db3a2e session: constant
+13:07:15.316 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.352 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: a62ca695-0793-42ab-a96c-526ede3922d8 session: constant
+13:07:15.352 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.393 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 3a9dfeef-c226-4b0f-b023-05e294a7fb74 session: constant
+13:07:15.394 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.426 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: dadee2e5-1d2b-45e3-a589-d3ea455e6068 session: constant
+13:07:15.426 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.459 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: d6241694-8fc0-4ec7-bd0c-2fbcdd7f2e03 session: constant
+13:07:15.460 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:15.991 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: ed273686-af06-481a-b9d8-bf029000d100
+13:07:15.992 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:16.586 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: ed273686-af06-481a-b9d8-bf029000d100
+13:07:16.639 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 316059e2-497c-4578-8112-51695842566a
+13:07:16.639 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:17.204 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 316059e2-497c-4578-8112-51695842566a
+13:07:17.253 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 579bb20d-4108-4fbe-956d-7977108790ce
+13:07:17.253 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:17.818 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 579bb20d-4108-4fbe-956d-7977108790ce
+13:07:17.974 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: a63d1964-9b20-488e-8be6-af1a2218f9d1
+13:07:17.975 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:18.642 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: a63d1964-9b20-488e-8be6-af1a2218f9d1
+13:07:18.700 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 8a7e2f25-0b98-435c-9e73-c81ee473351c
+13:07:18.701 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:19.332 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 8a7e2f25-0b98-435c-9e73-c81ee473351c
+13:07:19.392 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: fe5568f7-3374-41b8-ab07-9930557fac3f
+13:07:19.392 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:19.948 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: fe5568f7-3374-41b8-ab07-9930557fac3f
+13:07:20.011 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 5c8f8d8a-060b-4e3f-8091-f1ff02db3a2e
+13:07:20.011 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:20.208 [parallel-3] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_78ea1f_1698340033440","timeout":"PT5S"}
+13:07:20.663 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 5c8f8d8a-060b-4e3f-8091-f1ff02db3a2e
+13:07:20.730 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: a62ca695-0793-42ab-a96c-526ede3922d8
+13:07:20.730 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:21.345 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: a62ca695-0793-42ab-a96c-526ede3922d8
+13:07:21.416 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 3a9dfeef-c226-4b0f-b023-05e294a7fb74
+13:07:21.416 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:22.030 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 3a9dfeef-c226-4b0f-b023-05e294a7fb74
+13:07:22.069 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: dadee2e5-1d2b-45e3-a589-d3ea455e6068
+13:07:22.070 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:22.704 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: dadee2e5-1d2b-45e3-a589-d3ea455e6068
+13:07:22.735 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: d6241694-8fc0-4ec7-bd0c-2fbcdd7f2e03
+13:07:22.736 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:23.311 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: d6241694-8fc0-4ec7-bd0c-2fbcdd7f2e03
+13:07:27.740 [parallel-2] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_4828e2_1698340033456","timeout":"PT5S"}
+13:07:40.509 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Starting repro attempt:
+
+
+13:07:40.509 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 2b22a500-0e31-4d9f-8598-ee5d86760b83 session: intermittent
+13:07:40.510 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.547 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 6d2ed3db-0013-41f8-b7b4-27f001e7d619 session: constant
+13:07:40.547 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.598 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: intermittent message: 2b22a500-0e31-4d9f-8598-ee5d86760b83
+13:07:40.600 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: a060b881-9a56-4fba-b011-02ba9cd51d99 session: constant
+13:07:40.601 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.648 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: d07f8358-f257-45ac-b4aa-e73c478c5015 session: constant
+13:07:40.649 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.687 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 891ba1f1-52c8-4d16-9b36-5f4686b83fb8 session: constant
+13:07:40.688 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.728 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: ef7aebb1-0e62-43d0-be6a-bd887dd63687 session: constant
+13:07:40.729 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.744 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: intermittent message: 2b22a500-0e31-4d9f-8598-ee5d86760b83
+13:07:40.744 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 6d2ed3db-0013-41f8-b7b4-27f001e7d619
+13:07:40.744 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:40.764 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 168853af-d5d2-414f-8ed8-806884630dfd session: constant
+13:07:40.765 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.798 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: a6d6cb44-cb5f-4408-aa1b-19363d265239 session: constant
+13:07:40.799 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.839 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 0b037a07-32fb-4a09-992f-36f327fd8187 session: constant
+13:07:40.839 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.879 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: f7bfdba8-8cfb-4c14-ab35-94e80efb71f3 session: constant
+13:07:40.880 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.912 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: b98ba37c-c111-43e3-8bf0-b0f47eb52f79 session: constant
+13:07:40.913 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:40.970 [main] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Sending message: 68420579-f0a7-46d0-8740-d53a149e26fa session: constant
+13:07:40.971 [main] INFO  c.a.m.s.ServiceBusSenderAsyncClient - {"az.sdk.message":"Sending batch.","batchSize":1}
+13:07:41.316 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 6d2ed3db-0013-41f8-b7b4-27f001e7d619
+13:07:41.316 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: a060b881-9a56-4fba-b011-02ba9cd51d99
+13:07:41.316 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:42.072 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: a060b881-9a56-4fba-b011-02ba9cd51d99
+13:07:42.072 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: d07f8358-f257-45ac-b4aa-e73c478c5015
+13:07:42.072 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:42.628 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: d07f8358-f257-45ac-b4aa-e73c478c5015
+13:07:42.629 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 891ba1f1-52c8-4d16-9b36-5f4686b83fb8
+13:07:42.629 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:43.270 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 891ba1f1-52c8-4d16-9b36-5f4686b83fb8
+13:07:43.270 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: ef7aebb1-0e62-43d0-be6a-bd887dd63687
+13:07:43.270 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:43.887 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: ef7aebb1-0e62-43d0-be6a-bd887dd63687
+13:07:43.887 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 168853af-d5d2-414f-8ed8-806884630dfd
+13:07:43.887 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:44.938 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 168853af-d5d2-414f-8ed8-806884630dfd
+13:07:44.939 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: a6d6cb44-cb5f-4408-aa1b-19363d265239
+13:07:44.939 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:45.603 [parallel-4] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"intermittent","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_17eea8_1698340047742","timeout":"PT5S"}
+13:07:45.605 [receiver-1-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: java.lang.InterruptedException
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: reactor.core.Exceptions$ReactiveException: java.lang.InterruptedException
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:91)
+	at reactor.core.publisher.Mono.block(Mono.java:1742)
+	at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
+	at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
+	... 37 common frames omitted
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1048)
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:87)
+	... 41 common frames omitted
+13:07:45.607 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 0b037a07-32fb-4a09-992f-36f327fd8187
+13:07:45.607 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:46.063 [parallel-8] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_29a2de_1698340040663","timeout":"PT5S"}
+13:07:46.113 [receiver-1-4] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
+13:07:46.117 [receiver-1-4] INFO  c.a.m.s.i.ServiceBusReactorAmqpConnection - {"az.sdk.message":"Creating management node.","linkName":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","address":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management"}
+13:07:47.021 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:e53da1f4-2df5-403f-aa46-32cdd23b7dee_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:46","condition":"com.microsoft:session-lock-lost"}
+13:07:47.022 [receiver-1-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:e53da1f4-2df5-403f-aa46-32cdd23b7dee_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:46, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:e53da1f4-2df5-403f-aa46-32cdd23b7dee_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:46, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
+	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2065)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:132)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:292)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:172)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.settleMessage(RequestResponseChannel.java:421)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.lambda$new$0(RequestResponseChannel.java:197)
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+	at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at com.azure.core.amqp.implementation.handler.ReceiveLinkHandler.onDelivery(ReceiveLinkHandler.java:173)
+	at org.apache.qpid.proton.engine.BaseHandler.handle(BaseHandler.java:185)
+	at org.apache.qpid.proton.engine.impl.EventImpl.dispatch(EventImpl.java:108)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.dispatch(ReactorImpl.java:324)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.process(ReactorImpl.java:291)
+	at com.azure.core.amqp.implementation.ReactorExecutor.run(ReactorExecutor.java:91)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	... 6 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
+		at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+		at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+		at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+		... 6 common frames omitted
+Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:e53da1f4-2df5-403f-aa46-32cdd23b7dee_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:46, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
+	... 26 common frames omitted
+13:07:47.022 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: f7bfdba8-8cfb-4c14-ab35-94e80efb71f3
+13:07:47.022 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:47.523 [receiver-1-4] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
+13:07:47.553 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a675102-99cb-4993-8ea3-1ec3b84bef65_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:47","condition":"com.microsoft:session-lock-lost"}
+13:07:47.553 [receiver-1-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a675102-99cb-4993-8ea3-1ec3b84bef65_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:47, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a675102-99cb-4993-8ea3-1ec3b84bef65_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:47, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
+	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2065)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:132)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:292)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:172)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.settleMessage(RequestResponseChannel.java:421)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.lambda$new$0(RequestResponseChannel.java:197)
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+	at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at com.azure.core.amqp.implementation.handler.ReceiveLinkHandler.onDelivery(ReceiveLinkHandler.java:173)
+	at org.apache.qpid.proton.engine.BaseHandler.handle(BaseHandler.java:185)
+	at org.apache.qpid.proton.engine.impl.EventImpl.dispatch(EventImpl.java:108)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.dispatch(ReactorImpl.java:324)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.process(ReactorImpl.java:291)
+	at com.azure.core.amqp.implementation.ReactorExecutor.run(ReactorExecutor.java:91)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	... 6 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
+		at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+		at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+		at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+		... 6 common frames omitted
+Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5a675102-99cb-4993-8ea3-1ec3b84bef65_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:47, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
+	... 26 common frames omitted
+13:07:47.554 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: b98ba37c-c111-43e3-8bf0-b0f47eb52f79
+13:07:47.554 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:48.055 [receiver-1-4] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
+13:07:48.082 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:dd5ae8f8-a13b-4e9a-8f49-1a6758524724_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48","condition":"com.microsoft:session-lock-lost"}
+13:07:48.082 [receiver-1-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:dd5ae8f8-a13b-4e9a-8f49-1a6758524724_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:dd5ae8f8-a13b-4e9a-8f49-1a6758524724_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
+	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2065)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:132)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:292)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:172)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.settleMessage(RequestResponseChannel.java:421)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.lambda$new$0(RequestResponseChannel.java:197)
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+	at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at com.azure.core.amqp.implementation.handler.ReceiveLinkHandler.onDelivery(ReceiveLinkHandler.java:173)
+	at org.apache.qpid.proton.engine.BaseHandler.handle(BaseHandler.java:185)
+	at org.apache.qpid.proton.engine.impl.EventImpl.dispatch(EventImpl.java:108)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.dispatch(ReactorImpl.java:324)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.process(ReactorImpl.java:291)
+	at com.azure.core.amqp.implementation.ReactorExecutor.run(ReactorExecutor.java:91)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	... 6 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
+		at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+		at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+		at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+		... 6 common frames omitted
+Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:dd5ae8f8-a13b-4e9a-8f49-1a6758524724_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
+	... 26 common frames omitted
+13:07:48.082 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 68420579-f0a7-46d0-8740-d53a149e26fa
+13:07:48.082 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:48.588 [receiver-1-4] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Could not perform on session manger. Performing on management node.
+13:07:48.707 [reactor-executor-1] WARN  c.a.m.s.i.ManagementChannel - {"az.sdk.message":"Operation not successful.","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","status":"GONE","description":"The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5e855d4c-86df-4fb4-a4e5-4c11dc95a61e_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48","condition":"com.microsoft:session-lock-lost"}
+13:07:48.707 [receiver-1-4] ERROR c.t.a.s.bug.TriggerWorkInterrupt - Got Error: USER_CALLBACK thrive-jgoodwin-test.servicebus.windows.net test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL
+com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5e855d4c-86df-4fb4-a4e5-4c11dc95a61e_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:424)
+	at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+	at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.azure.messaging.servicebus.ServiceBusException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5e855d4c-86df-4fb4-a4e5-4c11dc95a61e_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.mapError(ManagementChannel.java:255)
+	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3811)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2065)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:132)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:292)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:172)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.settleMessage(RequestResponseChannel.java:421)
+	at com.azure.core.amqp.implementation.RequestResponseChannel.lambda$new$0(RequestResponseChannel.java:197)
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+	at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at com.azure.core.amqp.implementation.handler.ReceiveLinkHandler.onDelivery(ReceiveLinkHandler.java:173)
+	at org.apache.qpid.proton.engine.BaseHandler.handle(BaseHandler.java:185)
+	at org.apache.qpid.proton.engine.impl.EventImpl.dispatch(EventImpl.java:108)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.dispatch(ReactorImpl.java:324)
+	at org.apache.qpid.proton.reactor.impl.ReactorImpl.process(ReactorImpl.java:291)
+	at com.azure.core.amqp.implementation.ReactorExecutor.run(ReactorExecutor.java:91)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	... 6 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.azure.messaging.servicebus.ServiceBusReceivedMessageContext.complete(ServiceBusReceivedMessageContext.java:104)
+		at com.thrive.azure.servicebus.bug.TriggerWorkInterrupt.processMessage(TriggerWorkInterrupt.java:28)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:422)
+		at com.azure.messaging.servicebus.ServiceBusProcessorClient$1.onNext(ServiceBusProcessorClient.java:398)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:62)
+		at com.azure.messaging.servicebus.FluxTrace$TracingSubscriber.hookOnNext(FluxTrace.java:35)
+		at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:160)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:713)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:570)
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:985)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+		at reactor.core.publisher.FluxTakeUntilOther$TakeUntilMainSubscriber.onNext(FluxTakeUntilOther.java:243)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+		at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+		at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+		... 6 common frames omitted
+Caused by: com.azure.core.amqp.exception.AmqpException: The session lock has expired on the MessageSession. Accept a new MessageSession. TrackingId:5e855d4c-86df-4fb4-a4e5-4c11dc95a61e_B18, SystemTracker:NoSystemTracker, Timestamp:2023-10-26T17:07:48, errorContext[NAMESPACE: thrive-jgoodwin-test.servicebus.windows.net. ERROR CONTEXT: N/A, PATH: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL/$management, REFERENCE_ID: test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL-mgmt:receiver, LINK_CREDIT: 0]
+	at com.azure.core.amqp.implementation.ExceptionUtil.toException(ExceptionUtil.java:85)
+	at com.azure.messaging.servicebus.implementation.ManagementChannel.lambda$sendWithVerify$21(ManagementChannel.java:582)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:110)
+	... 26 common frames omitted
+13:07:48.711 [receiver-1-4] ERROR c.a.c.a.i.ReactorReceiver - {"az.sdk.message":"Cannot add credits to closed link: session-_17eea8_1698340047742","exception":"Cannot add credits to closed link: session-_17eea8_1698340047742","connectionId":"MF_7fe432_1698340033390","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_17eea8_1698340047742"}
+13:07:48.712 [receiver-1-4] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.IllegalStateException: Cannot add credits to closed link: session-_17eea8_1698340047742
+Caused by: java.lang.IllegalStateException: Cannot add credits to closed link: session-_17eea8_1698340047742
+	at com.azure.core.amqp.implementation.ReactorReceiver.addCredits(ReactorReceiver.java:250)
+	at com.azure.messaging.servicebus.ServiceBusSessionReceiver.lambda$new$2(ServiceBusSessionReceiver.java:98)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:138)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:447)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.ImmediateScheduler$ImmediateSchedulerWorker.schedule(ImmediateScheduler.java:84)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.trySchedule(FluxPublishOn.java:312)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.onNext(FluxPublishOn.java:237)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:210)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:440)
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:527)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+13:07:49.630 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 0b037a07-32fb-4a09-992f-36f327fd8187
+13:07:49.630 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:50.209 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 0b037a07-32fb-4a09-992f-36f327fd8187
+13:07:50.241 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: f7bfdba8-8cfb-4c14-ab35-94e80efb71f3
+13:07:50.241 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:50.865 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: f7bfdba8-8cfb-4c14-ab35-94e80efb71f3
+13:07:50.897 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: b98ba37c-c111-43e3-8bf0-b0f47eb52f79
+13:07:50.897 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:51.511 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: b98ba37c-c111-43e3-8bf0-b0f47eb52f79
+13:07:51.547 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Started handling message for session: constant message: 68420579-f0a7-46d0-8740-d53a149e26fa
+13:07:51.547 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - message on constant session sleeping
+13:07:52.126 [receiver-1-4] INFO  c.t.a.s.bug.TriggerWorkInterrupt - Finished handling message for session: constant message: 68420579-f0a7-46d0-8740-d53a149e26fa
+13:07:56.548 [parallel-7] INFO  c.a.m.s.ServiceBusSessionReceiver - {"az.sdk.message":"Did not a receive message within timeout.","sessionId":"constant","entityPath":"test-topic-1/subscriptions/Jon-Goodwins-MacBook-Pro-LOCAL","linkName":"session-_8617c5_1698340068709","timeout":"PT5S"}
+Disconnected from the target VM, address: '127.0.0.1:49840', transport: 'socket'
+13:07:59.061 [Thread-0] INFO  c.a.m.s.ServiceBusReceiverAsyncClient - Removing receiver links.
+13:07:59.062 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - {"az.sdk.message":"Closing a dependent client.","numberOfOpenClients":0}
+13:07:59.062 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - No more open clients, closing shared connection.
+13:07:59.062 [Thread-0] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Upstream connection publisher was completed. Terminating processor.","entityPath":"N/A"}
+13:07:59.062 [Thread-0] INFO  c.a.m.s.i.ServiceBusConnectionProcessor - {"az.sdk.message":"Channel is disposed.","entityPath":"N/A"}
+13:07:59.065 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - {"az.sdk.message":"Closing a client using shared connection cache.","numberOfOpenClients":0}
+13:07:59.065 [Thread-0] INFO  c.a.m.s.ServiceBusClientBuilder - No more open clients, closing shared connection cache.
+
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)
